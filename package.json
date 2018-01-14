@@ -1,0 +1,30 @@
+{
+	"name": "nightwatch-example",
+	"version": "1.0.0",
+	"description": "For deploying nightwatch easily",
+	"main": "index.js",
+	"engines": {
+		"node": "9.4.0"
+	},
+	"scripts": {
+		"test": "./node_modules/.bin/nightwatch -c nightwatch_conf.js --env default"
+	},
+	"author": "PG Tsai",
+	"license": "MIT",
+	"dependencies": {
+		"nightwatch": "^0.9.19",
+		"selenium-download": "^2.0.11",
+		"chromedriver": "^2.34.1",
+		"geckodriver": "^1.10.0",
+		"selenium-server": "^2.34.1"
+	},
+	"keywords": [
+		"nightwatch",
+		"testing",
+		"front-end",
+		"UI",
+		"browser",
+		"test",
+		"testing"
+	]
+}
