@@ -3,11 +3,11 @@ For deploying Nightwatch.js easily
 
 # How to install
 
-npm install
+`npm install`
 
 # How to use
 
-npm test
+`npm test`
 
 # Trouble shooting
 
