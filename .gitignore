@@ -1,0 +1,8 @@
+node_modules/
+npm-debug.log
+nohup.out
+selenium-debug.log
+.DS_Store
+
+results
+screenshots
