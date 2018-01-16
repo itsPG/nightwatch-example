@@ -9,13 +9,13 @@ module.exports = {
   'demo test google' : function (client) {
     client
       .url('http://google.com')
-      .waitForElementPresent('body', 1000);
+      .waitForElementPresent('body', 2000);
   },
 
   'part two' : function(client) {
     client
       .setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
-      .pause(1000)
+      .pause(2000)
       .assert.containsText('body', 'Nightwatch.js')
       .pause(1000)
       .end();

@@ -1,6 +1,7 @@
 const seleniumServer = require('selenium-server');
 const chromedriver = require('chromedriver');
 const geckodriver = require('geckodriver');
+const phantomjs = require('phantomjs2');
 const PKG = require('./package.json');
 
 module.exports = {
@@ -15,8 +16,9 @@ module.exports = {
 		host: '127.0.0.1',
 		port: 3511,
 		cli_args: {
-			'webdriver.chrome.driver' : chromedriver.path,
-			'webdriver.gecko.driver':  geckodriver.path
+			'webdriver.chrome.driver': chromedriver.path,
+			'webdriver.gecko.driver': geckodriver.path,
+			'phantomjs.binary.path': phantomjs.path,
 		}
 	},
 
@@ -38,13 +40,22 @@ module.exports = {
 		chrome: {
 			desiredCapabilities: {
 				browserName: 'chrome',
-				javascriptEnabled: true
+				javascriptEnabled: true,
+				acceptSslCerts: true
 			}
 		},
 		firefox: {
 			desiredCapabilities: {
 				browserName: 'firefox',
-				javascriptEnabled: true
+				javascriptEnabled: true,
+				acceptSslCerts: true
+			}
+		},
+		phantomjs: {
+			desiredCapabilities: {
+				browserName: 'phantomjs',
+				javascriptEnabled: true,
+				acceptSslCerts: true
 			}
 		}
 	}

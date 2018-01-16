@@ -14,6 +14,7 @@
 	"dependencies": {
 		"nightwatch": "^0.9.19",
 		"selenium-download": "^2.0.11",
+		"phantomjs2": "^2.2.0",
 		"chromedriver": "^2.34.1",
 		"geckodriver": "^1.10.0",
 		"selenium-server": "^2.34.1"
